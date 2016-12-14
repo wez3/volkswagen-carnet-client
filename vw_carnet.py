@@ -62,7 +62,7 @@ def retrieveCarNetInfo(VIN):
 
 	# Retrieved information
 	print str(loc)
-	print str(carcounter)
+	print str(carCounter)
 	print str(celcius)
 	
 def startClimat(VIN):
