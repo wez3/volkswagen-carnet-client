@@ -61,9 +61,9 @@ def retrieveCarNetInfo(VIN):
 	celcius = float(carTempDot)-273
 
 	# Retrieved information
-	print str(switchTemperature)
-	print str(switchLocation)
-	print str(switchCarCounter)
+	print str(loc)
+	print str(carcounter)
+	print str(celcius)
 	
 def startClimat(VIN):
 	HEADERS["Content-Type"] = 'application/vnd.vwg.mbb.climateraction_v1_0_0+xml'
