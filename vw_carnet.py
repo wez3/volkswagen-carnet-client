@@ -38,8 +38,8 @@ def retrieveCarNetInfo(VIN):
 	r = requests.get('https://msg.volkswagen.de/fs-car/bs/cf/v1/VW/DE/vehicles/' + VIN + '/position', headers=HEADERS)
 	responseData = json.loads(r.content)
 	carPosition = responseData.get("findCarResponse").get("Position").get("carCoordinate")
-	latReversed = carPosition.get("latitude")[::-1]
-	lonReversed = carPosition.get("longitude")[::-1]
+	latReversed = str(carPosition.get("latitude"))[::-1]
+	lonReversed = str(carPosition.get("longitude"))[::-1]
 	lat = latReversed[:6] + "." + latReversed[6:]
 	lon = lonReversed[:6] + "." + lonReversed[6:]
 	floc = requests.get('https://maps.googleapis.com/maps/api/geocode/json?address=' + str(lat[::-1]) + ',' + str(lon[::-1]))
