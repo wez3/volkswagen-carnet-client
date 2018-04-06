@@ -18,6 +18,10 @@ python vw_carnet.py retrieveCarNetInfo
 ```
 
 ```
+python vw_carnet.py requestCarSendData
+```
+
+```
 python vw_carnet.py startClimat
 ```
 
