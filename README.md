@@ -2,6 +2,8 @@
 
 **This script is deprecated**
 
+A newer version can be found at https://github.com/bgewehr/volkswagen-carnet-client
+
 This is a Python client for Volkswagen CarNet, it simulates the behaviour of the CarNet app. It allows users to retrieve information about the vehicle (location, temperature and mileage), next to this the Window melt and Climat functionalities can be started from the Python script.
 
 # Installation
